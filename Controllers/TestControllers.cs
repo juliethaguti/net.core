@@ -8,7 +8,9 @@ namespace Notes.Controllers
         }
 
         public IActionResult Hola(){
-            return View();
+
+            string saludo = "Hola mundo! Bienvenido a la aplicacion de notas!";
+            return View("Hola", saludo);
         }
     }
 }
